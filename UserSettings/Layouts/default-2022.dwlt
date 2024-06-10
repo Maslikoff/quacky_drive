@@ -761,9 +761,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 131.13495, y: -35.428097, z: 24.462803}
+    m_Target: {x: 138.85643, y: 36.037975, z: 155.8776}
     speed: 2
-    m_Value: {x: 131.13495, y: -35.428097, z: 24.462803}
+    m_Value: {x: 138.85643, y: 36.037975, z: 155.8776}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -809,13 +809,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.013685761, y: -0.9705034, z: 0.23451455, w: -0.05511788}
+    m_Target: {x: 0.19463502, y: -0.79655427, z: 0.333028, w: 0.4655374}
     speed: 2
-    m_Value: {x: -0.013602411, y: -0.97080594, z: 0.23304696, w: -0.055135608}
+    m_Value: {x: 0.19413388, y: -0.797246, z: 0.3333172, w: 0.46433875}
   m_Size:
-    m_Target: 54.51387
+    m_Target: 3.8795364
     speed: 2
-    m_Value: 54.51387
+    m_Value: 3.8795364
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -959,7 +959,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefab
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -967,17 +967,17 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefab
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\ilyam\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439
     \u0441\u0442\u043E\u043B\\Games\\quacky_drive"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 127}
-    m_SelectedIDs: 20910000
-    m_LastClickedID: 37152
-    m_ExpandedIDs: 000000009c90000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 173}
+    m_SelectedIDs: 9c910000
+    m_LastClickedID: 37276
+    m_ExpandedIDs: 00000000189100008e910000949100000893000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1005,7 +1005,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009c900000
+    m_ExpandedIDs: 0000000018910000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1218,7 +1218,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0228ffff728effff928effffb28effff4ac7ffffa0cfffffd0d7ffffdef1ffffe6f1fffff6f1fffff2f9ffff36850000
+      m_ExpandedIDs: 1299fffff2f9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
