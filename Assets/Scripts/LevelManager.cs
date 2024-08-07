@@ -12,9 +12,18 @@ public class LevelManager : MonoBehaviour
 
     public void Restart()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene("TestDev");
         Time.timeScale = 1;
+    }
+
+    public void LoadVictoryScene()
+    {
+        SceneManager.LoadScene("VictoryScene"); SceneManager.LoadScene("LostScene");
+    }
+
+    public void LoadLostScene()
+    {
+        SceneManager.LoadScene("LostScene");
     }
 
     public void Pause()
@@ -25,5 +34,10 @@ public class LevelManager : MonoBehaviour
     public void PlayGame()
     {
         Time.timeScale = 1;
+    }
+
+    public void PlayMission(string nameMission)
+    {
+        SceneManager.LoadScene(nameMission);
     }
 }

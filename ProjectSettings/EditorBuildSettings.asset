@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainLevel.unity
     guid: 717a351f3b15e8647976a7ed7353b801
+  - enabled: 1
+    path: Assets/Scenes/MissionCollectors.unity
+    guid: 8ce37996b6af62844a876eade013fa00
+  - enabled: 1
+    path: Assets/Scenes/MissionSuitcases.unity
+    guid: 94ea0ef29f43dfa45b1ca6a5770e47d5
+  - enabled: 1
+    path: Assets/Scenes/MissionWhile.unity
+    guid: 90d12a827dc882d42bec6aebd8d258b8
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b4d3ba5f3c70a1c47b5d2dfe903576ac,
       type: 2}

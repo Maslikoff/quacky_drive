@@ -10,6 +10,9 @@ TagManager:
   - WayPointNameHere
   - Police
   - SaveZone
+  - Road
+  - Collector
+  - DrivePoint
   layers:
   - Default
   - TransparentFX

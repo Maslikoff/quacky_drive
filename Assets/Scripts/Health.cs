@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -9,11 +6,13 @@ public class Health : MonoBehaviour
     [SerializeField] private float baseDamage = 10f;
     [SerializeField] private float noRigidbodyMultiplier = 2f;
 
+    private LevelManager _levelManager;
+
     private void OnCollisionEnter(Collision collision)
     {
         float damage = baseDamage;
 
-        if (!collision.gameObject.CompareTag("Police"))
+        if (!collision.gameObject.CompareTag("Police") || !collision.gameObject.CompareTag("Collector"))
         {
             if (collision.gameObject.GetComponent<Rigidbody>() == null)
             {
@@ -37,7 +36,7 @@ public class Health : MonoBehaviour
 
         if (health <= 0)
         {
-            SceneManager.LoadScene("LostScene");
+            _levelManager.LoadLostScene();
             Debug.Log("Машина разрушена!");
         }
     }

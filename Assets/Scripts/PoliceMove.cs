@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
-public class NavMesh : MonoBehaviour
+public class PoliceMove : MonoBehaviour
 {
     public float visionRange = 100f;
 

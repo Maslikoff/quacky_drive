@@ -15,7 +15,7 @@ public class SaveZone : MonoBehaviour
     [Header("Police")]
     [SerializeField] private string textTag = "Police";
 
-    private NavMesh _visionPolice;
+    private PoliceMove _visionPolice;
 
     private List<GameObject> policeCars = new List<GameObject>();
 
@@ -50,7 +50,7 @@ public class SaveZone : MonoBehaviour
             foreach (GameObject police in policeArray)
             {
                 policeCars.Add(police);
-                _visionPolice = police.GetComponent<NavMesh>();
+                _visionPolice = police.GetComponent<PoliceMove>();
                 _visionPolice.visionRange = 0f;
             }
         }
@@ -63,7 +63,7 @@ public class SaveZone : MonoBehaviour
             _textTimer.text = _textRun;
             foreach (GameObject police in policeCars)
             {
-                _visionPolice = police.GetComponent<NavMesh>();
+                _visionPolice = police.GetComponent<PoliceMove>();
                 _visionPolice.visionRange = 100f;
             }
             policeCars.Clear();

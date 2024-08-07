@@ -6,10 +6,13 @@ public class DeadObject : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        Collider collider = GetComponent<Collider>();
-        if (collision.gameObject.CompareTag("Car") || collision.gameObject.CompareTag("Police"))
+        if (collision.gameObject.CompareTag("Car") || 
+            collision.gameObject.CompareTag("Police") || 
+            collision.gameObject.CompareTag("Collector"))
         {
+            Collider collider = GetComponent<Collider>();
             collider.isTrigger = true;
+
             Destroy(gameObject, 3f);
         }
     }
