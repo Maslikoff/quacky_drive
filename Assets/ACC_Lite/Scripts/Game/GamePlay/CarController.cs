@@ -65,16 +65,16 @@ public class CarController :MonoBehaviour
 
 	float[] AllGearsRatio;															 //All gears (Reverce, neutral and all forward).
 
-	Rigidbody _RB;
+	public Rigidbody Rb;
 	public Rigidbody RB
 	{
 		get
 		{
-			if (!_RB)
+			if (!Rb)
 			{
-				_RB = GetComponent<Rigidbody> ();
+				Rb = GetComponent<Rigidbody> ();
 			}
-			return _RB;
+			return Rb;
 		}
 	}
 
@@ -167,6 +167,21 @@ public class CarController :MonoBehaviour
 		{
 			Wheels[i].UpdateVisual ();
 		}
+
+		if (IsCarUpsideDown())
+		{
+			FlipCar();
+		}
+	}
+
+	bool IsCarUpsideDown()
+	{
+		return transform.up.y < 0.0f;
+	}
+
+	void FlipCar()
+	{
+		transform.Rotate(Vector3.right, 180.0f);
 	}
 
 	private void FixedUpdate ()

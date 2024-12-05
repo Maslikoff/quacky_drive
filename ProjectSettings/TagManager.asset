@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Car
   - ResetDriftCollision
+  - Jewelry
+  - WayPointNameHere
+  - Police
+  - SaveZone
   layers:
   - Default
   - TransparentFX
@@ -21,8 +25,8 @@ TagManager:
   - Metal
   - Rubber
   - FinishZone
-  - 
-  - 
+  - Police
+  - PostProcessing
   - 
   - 
   - 
